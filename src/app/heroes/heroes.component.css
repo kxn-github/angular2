@@ -1,0 +1,218 @@
+/*!* HeroesComponent's private CSS styles *!*/
+/*.heroes {*/
+@import '~font-awesome/css/font-awesome.css';
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+nz-header{
+  background: #4d4320;
+  color: #fff;
+}
+
+nz-content {
+  background: rgba(16, 142, 233, 1);
+  color: #fff;
+  min-height: 120px;
+  line-height: 120px;
+}
+
+nz-layout {
+  margin-bottom: 48px;
+}
+
+nz-layout:last-child {
+  margin: 0;
+}
+.header{
+  width: 100%;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-left{
+  width: 140px;
+  height: 62px;
+  padding-top: 11px;
+}
+.header-left img{
+  width: 100%;
+  height: 100%;
+}
+ul{
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+.header-right{
+  float: left;
+  margin-right: 20px;
+  line-height: 84px;
+
+}
+.ellipsis{
+  padding-left:20px
+}
+.hoverdata{
+  float: left;
+  padding-left: 80px;
+}
+.hoverright{
+  float: right;
+  padding-right: 50px;
+}
+.pic{
+  height:180px;
+  width:90%;
+  text-align:center;
+  top: 0px;
+  margin-top: 0px;
+  padding-top:0px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  background-image: url('../../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 8px;
+}
+.flexcenter{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contenr{
+  width: 90%;
+  height: 80vh;
+}
+[nz-form] {
+  max-width: 600px;
+}
+
+.phone-select {
+  width: 70px;
+}
+
+.register-are {
+  margin-bottom: 8px;
+}
+.contenr{
+  width:90%;
+  margin-top: 20px;
+  height:100vh
+}
+.navside{
+  background-color: #281e13;
+  /*height:9vh;*/
+}
+.faleft{
+  margin-left: 20px;
+  margin-top:2vh;
+  color: white;
+}
+.centerflex{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top:3vh;
+  font-size: large;
+  color: white;
+}
+.lefticon{
+  float: right;
+  padding-right: 15px;
+  margin-top:1vh;
+  color: white;
+}
+.allaccount{
+  padding-left:280px;
+}
+.timer{
+  padding-left: 60px;
+  color: black;
+  font-weight: bold;
+}
+.blk{
+  color: black;
+  font-weight: bold;
+}
+.iconposition{
+  margin-left:170px
+}
+.iconps{
+  margin-left: 15px;
+}
+.fontcol{
+  color: white;
+  font-weight: bold;
+}
+.picone{
+  height: 50px;
+  padding-top: 20px;
+
+}
+.outcome{
+  padding-right:140px;
+}
+/*.outnum{*/
+/*padding-right:420px;*/
+/*}*/
+.datepositon{
+  margin-right: 125px;
+}
+.letterposition{
+  padding-left:100px;
+  margin-top: 7px;
+}
+.letterdv{
+  margin-top:70px;
+  background-color: #e7eae9;
+}
+.centersy{
+  height:20vh;
+  width:90%;
+  text-align:center;
+  top: 0px;
+  margin-top: 0px;
+  padding-top:0px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.todaycontent{
+  margin-left: -300px;
+
+}
+.price{
+  padding-left: 370px;
+  margin-left: 155px
+}
+.topdis{
+  margin-top: 15px;
+}
+/*.clearfix:after{*/
+/*content: "";*/
+/*display: block;*/
+/*height: 0;*/
+/*clear:both;*/
+/*visibility: hidden;*/
+/*}*/
+
+nz-select {
+  margin: 0 8px 10px 0;
+  width: 120px;
+}
+.selecttop{
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.allcount{
+  margin-left: 225px;
+  margin-top: 10px;
+}
+.remain{
+  font-weight: bold;
+  color: white;
+  padding-left: 10px;
+}

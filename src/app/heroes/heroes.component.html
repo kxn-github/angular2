@@ -1,0 +1,156 @@
+<div class="login-form contenr " style="background-color: #fdfffd">
+  <!--<button  (click)="onClickMe()">Click me!</button>-->
+  <div id="header" class="navside" >
+    <div nz-row >
+      <div nz-col nzSpan="8">
+        <i class="fa fa-angle-left fa-3x faleft" aria-hidden="true"></i>
+      </div>
+      <div nz-col nzSpan="8">
+        <p class="centerflex">收支</p>
+      </div>
+      <div nz-col nzSpan="8" class="lefticon">
+        <span class="lefticon">
+        <i class="fa fa-headphones fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-ellipsis-h fa-3x ellipsis" aria-hidden="true" ></i>
+          </span>
+      </div>
+    </div>
+  </div>
+  <div id="content" >
+    <div nz-row>
+      <div nz-col nzSpan="8">
+        <nz-select ngModel="DATE" class="selecttop">
+          <nz-option nzValue="jack" nzLabel="2019/08"></nz-option>
+          <nz-option nzValue="DATE" nzLabel="2018/08"></nz-option>
+          <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+        </nz-select>
+      </div>
+      <div nz-col nzSpan="8"></div>
+      <div nz-col nzSpan="8">
+        <nz-select ngModel="account" class="allcount">
+          <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+          <nz-option nzValue="account" nzLabel="全部账户"></nz-option>
+          <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+        </nz-select>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div nz-row class="picone">
+        <div nz-col nzSpan="6" class="fontcol">
+          <p class="datepositon">8/2019</p>
+        </div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="6">
+          <span class="fontcol">余额</span>
+          <span class="remain">{{list.num}}</span>
+        </div>
+      </div>
+      <div nz-row class="picone">
+        <div nz-col nzSpan="6" class="fontcol outcome">支出
+        </div>
+        <div nz-col nzSpan="6" class="fontcol">收入
+        </div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="6"></div>
+      </div>
+      <div nz-row>
+        <div nz-col nzSpan="6" class="fontcol outcome">
+          <app-demo></app-demo>
+        </div>
+        <div nz-col nzSpan="6" class="fontcol">
+          <app-demo></app-demo>
+        </div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="6"></div>
+      </div>
+      <div nz-row class="picone">
+        <div nz-col nzSpan="6" class="">
+          <div nz-row>
+            <div nz-col nzSpan="12" class="fontcol">预算</div>
+            <div nz-col nzSpan="12"class="fontcol">
+              <p>您还未设置
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="6"></div>
+      </div>
+    </div>
+    <div>
+      <div nz-row class="iconposition picone">
+        <div nz-col nzSpan="6">
+          <i class="fa fa-clock-o fa-2x iconps" aria-hidden="true"></i>
+          <div>收支分析</div>
+        </div>
+        <div nz-col nzSpan="6">
+          <i class="fa fa-file-code-o fa-2x iconps" aria-hidden="true"></i>
+          <div>月度账单</div>
+        </div>
+        <div nz-col nzSpan="6">
+          <i class="fa fa-credit-card fa-2x iconps" aria-hidden="true"></i>
+          <div>我的账本</div>
+        </div>
+        <div nz-col nzSpan="6">
+          <i class="fa fa-search fa-2x iconps" aria-hidden="true"></i>
+          <div>查找交易</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="letterdv" >
+    <div nz-row>
+      <div nz-col nzSpan="6">
+        <p class="letterposition"> 今天</p>
+      </div>
+      <div nz-col nzSpan="6"></div>
+      <div nz-col nzSpan="6"></div>
+      <div nz-col nzSpan="6">
+        <p class="letterposition"s>刷新</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="centersy topdis" style="background-color: #fdfffd">
+    <div nz-row>
+      <div nz-col nzSpan="16" class="todaycontent">
+        <div>
+          <i class="fa fa-glass" aria-hidden="true"></i>
+          <span>瑞幸咖啡</span>
+        </div>
+      </div>
+
+      <div nz-col nzSpan="8" class="price">6.27</div>
+    </div>
+  </div>
+  <div class="letterdv">
+    <div nz-row>
+      <div nz-col nzSpan="6">
+        <p class="letterposition"> 昨天</p>
+      </div>
+      <div nz-col nzSpan="6"></div>
+      <div nz-col nzSpan="6"></div>
+      <div nz-col nzSpan="6">
+      </div>
+    </div>
+
+  </div>
+  <div class="centersy topdis" style="background-color: #fdfffd">
+    <div nz-row>
+      <div nz-col nzSpan="16" class="todaycontent">
+        <div>
+          <i class="fa fa-glass" aria-hidden="true"></i>
+          <span>瑞幸咖啡</span>
+        </div>
+      </div>
+
+      <div nz-col nzSpan="8" class="price">-9.27</div>
+    </div>
+  </div>
+
+</div>
