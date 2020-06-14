@@ -7,7 +7,7 @@ import {HEROES} from '../mock-data';
   styleUrls: ['./demo.component.css']
 })
 export class DemoComponent implements OnInit {
-  data = HEROES;
+  demodata = HEROES;
 
   constructor() { }
 

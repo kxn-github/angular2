@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { HeroService } from '../hero.service';
 // import {HttpClient} from '@angular/common/http';
 // import { DemoComponent } from './demo/demo.component';
-
+import { Bank } from '../bank';
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -11,12 +11,19 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
   // heroes: Hero[];
+  banks: Bank[];
   title = 'Angular2';
   clickMessage = '';
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
     // this.getHeroes();
+    this.getBanks();
+
+  }
+  getBanks(): void {
+    this.heroService.getBank()
+      .subscribe(banks => this.banks = banks);
   }
   onClickMe() {
     this.clickMessage = '你点击了我!';

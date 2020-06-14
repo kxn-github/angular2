@@ -1,32 +1,29 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
-
 import { Hero } from './hero';
 import { MessageService } from './message.service';
-
+import { Bank } from './bank';
 
 @Injectable({ providedIn: 'root' })
 export class HeroService {
-  list: any = [];
+  // list: any = [];
   private heroesUrl = 'api/heroes';  // URL to web api
-
+  private bankUrl = 'api/banks';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-
   constructor(
     private http: HttpClient,
     private messageService: MessageService) { }
   /** GET heroes from the server */
-   loadall() {
-    this.http.get('assets/demo.json')
-      .subscribe(data => {
-        console.log('get data', data);
-        this.list = data;
-      });
+  getBank(): Observable<Bank[]> {
+    return this.http.get<Bank[]>(this.bankUrl)
+      .pipe(
+        tap(_ => this.log('fetched bank')),
+        catchError(this.handleError<Bank[]>('getBank', []))
+      );
   }
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl)

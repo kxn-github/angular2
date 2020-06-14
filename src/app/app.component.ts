@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'Tour of Heroes';
+  title = '成熟框架应用';
+  isShow: boolean = true;
+  Show(): void {
+    this.isShow = false;
+  }
 }

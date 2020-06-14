@@ -6,7 +6,7 @@ import { Hero } from './hero';
   providedIn: 'root',
 })
 export class InMemoryDataService implements InMemoryDbService {
-  createDb() {
+   createDb() {
     const heroes = [
       { id: 11, name: 'Dr Nice' },
       { id: 12, name: 'Narco' },
@@ -19,8 +19,13 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 19, name: 'Magma' },
       { id: 20, name: 'Tornado' }
     ];
-    return {heroes};
+
+    const banks = [
+      { name: '11', num: '22' }
+    ];
+    return {banks,heroes};
   }
+
 
   // Overrides the genId method to ensure that a hero always has an id.
   // If the heroes array is empty,

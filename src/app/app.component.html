@@ -1,7 +1,7 @@
-<h1>{{title}}</h1>
+<h1 *ngIf ="isShow">{{title}}</h1>
 <nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a style = "margin-left:20px;" routerLink="/heroes" (click)="hideMe()">Heroes</a>
+  <a  *ngIf ="isShow" routerLink="/dashboard">返回主界面</a>
+  <a *ngIf ="isShow" style = "margin-left:20px;" routerLink="/heroes" (click)="Show()" >要求的页面展示</a>
 </nav>
 <router-outlet></router-outlet>
 <!--<app-messages></app-messages>-->
